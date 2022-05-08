@@ -18,7 +18,7 @@ jobs:
         - uses: lowlighter/metrics@latest
           env:
             USERNAME: ${{ github.repository_owner }}
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
         - name: Commit & Push
           run: |
             git config user.name riimuru

@@ -5,5 +5,5 @@
 <hr>
    <h3>Github Stats ⚡</h3>
   <img src="./profile-3d-contrib/profile-night-rainbow.svg">
-  <details><summary><strong>GitHub Metrics</strong></summary><img src="./metrics.terminal.svg"></details>
+  <details><summary><strong>GitHub Metrics</strong></summary><img src="./github-metrics.svg"></details>
 </div>

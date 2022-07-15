@@ -16,33 +16,43 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
-          template: terminal
-          base: header, metadata
+          user: riimuru
+          template: classic
+          base: header, activity, community, repositories, metadata
+          repositories_forks: yes
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
+          plugin_repositories: yes
+          plugin_repositories_featured: consumet/consumet-api, riimuru/gogoanime, consumet-extensions
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_people: yes
+          plugin_people_types: followers
+          plugin_people_limit: 28
+          plugin_people_size: 28
+          plugin_people_identicons: no
+          plugin_people_shuffle: yes
           plugin_languages: yes
-          plugin_traffic: yes
-          plugin_languages_indepth: yes
-          plugin_topics: yes
-          plugin_topics_mode: icons
-          plugin_topics_limit: 12
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+          plugin_lines: yes
+          plugin_notable: yes
           token: ${{ secrets.METRICS_TOKEN }}
-          
-  build:
-      runs-on: ubuntu-latest
-      name: generate-github-3d-contrib
-      steps:
-        - uses: actions/checkout@v2
-        - uses: yoshi389111/github-profile-3d-contrib@0.4.0
-          env:
-            USERNAME: ${{ github.repository_owner }}
-            GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
-        - name: Commit & Push
-          run: |
-            git config user.name riimuru
-            git config user.email mythhb@yahoo.com
-            git add -A .
-            git commit -m "Generated: Update README"
-            git push -f
-          
-        
-        
-

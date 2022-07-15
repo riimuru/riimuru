@@ -25,7 +25,7 @@ jobs:
           plugin_habits_charts: yes
           plugin_habits_trim: yes
           plugin_repositories: yes
-          plugin_repositories_featured: consumet/consumet-api, riimuru/gogoanime, consumet-extensions
+          plugin_repositories_featured: consumet/consumet-api, riimuru/gogoanime, consumet/extensions
           plugin_achievements: yes
           plugin_achievements_display: detailed
           plugin_achievements_secrets: yes

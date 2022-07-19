@@ -10,5 +10,5 @@
    
   ![](https://github-readme-stats.vercel.app/api?username=riimuru&show_icons=true&theme=tokyonight&layout=compact)
    
-  <details><summary><strong>GitHub Metrics</strong></summary><img src="./metrics.svg"></details>
+  <details><summary><strong>GitHub Metrics</strong></summary><img src="./metrics.svg" width="500"></details>
 </div>
